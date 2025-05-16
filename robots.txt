@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /cdn-cgi/l/email-protection
+Allow: /
+Sitemap: https://residential-construction-oman.alwejhagroup.com/sitemap.xml

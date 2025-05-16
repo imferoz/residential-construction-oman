@@ -1,70 +1,339 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Residential Construction Services in Oman | AL WEJHA GROUP</title>
-    <meta name="description" content="Premium residential construction in Oman - Villas, apartments, and housing communities. Quality craftsmanship with Omani building standards.">
-    <meta name="keywords" content="residential construction Oman, villa construction, apartment buildings, housing communities Oman, AL WEJHA GROUP">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
-    <style>
-        :root {
-            --terracotta: #E27D60;
-            --sage-green: #87BBA2;
-        }
-
-        body {
-            font-family: 'Lato', sans-serif;
-            color: #36454F;
-            margin: 0;
-            line-height: 1.7;
-        }
-
-        .residential-header {
-            background: linear-gradient(135deg, var(--sage-green), #6A9C89);
-            color: white;
-            padding: 5rem 1rem;
-            text-align: center;
-        }
-
-        .home-designs {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-            padding: 3rem 1rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .design-card {
-            background: white;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
-        }
-
-        .residential-cta {
-            background: var(--terracotta);
-            color: white!important;
-            padding: 1rem 2rem;
-            border-radius: 30px;
-            text-decoration: none;
-            display: inline-block;
-            transition: all 0.3s ease;
-        }
-
-        .residential-cta:hover {
-            background: #D2691E;
-        }
-    </style>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="description" content="Premium residential construction services in Oman including luxury villas, apartments, and sustainable housing solutions. AL WEJHA GROUP delivers quality craftsmanship for dream homes." />
+  <meta name="keywords" content="residential construction Oman, villa construction Muscat, apartment builders Oman, luxury home construction, sustainable housing Oman, AL WEJHA GROUP" />
+  <meta name="author" content="AL WEJHA GROUP" />
+  <title>Residential Construction Services in Oman | AL WEJHA GROUP</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="./residential-construction-oman.webp" type="image/webp">
+  <style>
+    :root {
+      --primary-color: #0b74de;
+      --secondary-color: #004080;
+      --accent-color: #e67e22;
+      --light-bg: #f9f9f9;
+      --dark-text: #333;
+      --light-text: #fff;
+    }
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: var(--light-bg);
+      margin: 0;
+      padding: 0;
+      color: var(--dark-text);
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      color: var(--light-text);
+      padding: 60px 20px 40px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path fill="rgba(255,255,255,0.05)" d="M0,0 L100,0 L100,100 Q50,80 0,100 Z"></path></svg>');
+      background-size: 100% 100%;
+      opacity: 0.2;
+    }
+    header h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.5rem;
+      margin: 0 0 10px;
+      position: relative;
+    }
+    header p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+      position: relative;
+    }
+    nav {
+      background-color: var(--light-text);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav .container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    nav a {
+      margin: 0 15px;
+      color: var(--secondary-color);
+      text-decoration: none;
+      font-weight: 600;
+      padding: 5px 0;
+      border-bottom: 2px solid transparent;
+      transition: all 0.3s ease;
+    }
+    nav a:hover {
+      color: var(--primary-color);
+      border-bottom-color: var(--primary-color);
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    section {
+      padding: 40px 0;
+    }
+    .hero-section {
+      position: relative;
+      margin-bottom: 40px;
+    }
+    .hero-img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    .hero-content {
+      position: absolute;
+      bottom: 40px;
+      left: 40px;
+      background: rgba(11, 116, 222, 0.9);
+      color: white;
+      padding: 30px;
+      max-width: 500px;
+      border-radius: 8px;
+    }
+    .hero-content h2 {
+      margin-top: 0;
+      font-size: 2rem;
+    }
+    h2, h3 {
+      color: var(--secondary-color);
+      font-family: 'Montserrat', sans-serif;
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin: 40px 0;
+    }
+    .service-card {
+      background: var(--light-text);
+      border-radius: 8px;
+      padding: 25px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease;
+    }
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+    .service-card h3 {
+      color: var(--accent-color);
+      margin-top: 0;
+    }
+    .cta-section {
+      text-align: center;
+      background: var(--secondary-color);
+      color: var(--light-text);
+      padding: 60px 20px;
+      margin: 40px 0;
+      border-radius: 8px;
+    }
+    .cta, .backlink {
+      display: inline-block;
+      background-color: var(--accent-color);
+      color: var(--light-text);
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin: 10px 5px;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+    .cta:hover, .backlink:hover {
+      background-color: #d35400;
+    }
+    .contact-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .testimonials {
+      background: var(--light-text);
+      padding: 40px;
+      border-radius: 8px;
+      margin: 40px 0;
+    }
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .testimonial {
+      padding: 20px;
+      border-left: 3px solid var(--accent-color);
+      background: var(--light-bg);
+    }
+    footer {
+      background-color: var(--secondary-color);
+      color: var(--light-text);
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.9rem;
+    }
+    footer a {
+      color: var(--light-text);
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .hero-content {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        max-width: 100%;
+        margin-top: -50px;
+      }
+      .hero-img {
+        height: 350px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header class="residential-header">
-        <h1>Residential Construction in Oman</h1>
-        <p>Crafting Dream Homes Since 2005</p>
-    </header>
+  <header>
+    <h1>Residential Construction Services in Oman</h1>
+    <p>Building dream homes with Omani craftsmanship and international standards</p>
+  </header>
 
-    <nav style="background: #F0F3F4; padding: 1rem; text-align: center;">
-        <a href="https://www.alwejhagroup.com/" style="color: var(--sage-green); margin: 0 1rem;">Home</a>
-        <a href="https://www.alwejhagroup.com/area-of-expertise" style="color
+  <!-- Navigation with Backlinks to Main Website Pages -->
+  <nav>
+    <div class="container">
+      <a href="https://www.alwejhagroup.com/">Home</a>
+      <a href="https://www.alwejhagroup.com/area-of-expertise" target="_blank">Area Of Expertise</a>
+      <a href="https://www.alwejhagroup.com/our-services" target="_blank">Our Services</a>
+      <a href="https://www.alwejhagroup.com/our-clients" target="_blank">Our Clients</a>
+      <a href="https://www.alwejhagroup.com/contact" target="_blank">Contact</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <img class="hero-img" src="./residential-construction-oman.webp" alt="Luxury residential construction in Oman by AL WEJHA GROUP" loading="eager">
+      <div class="hero-content">
+        <h2>Your Vision, Our Expertise</h2>
+        <p>From concept to completion, we deliver exceptional residential properties across Oman with attention to detail and quality craftsmanship.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Premium Residential Construction Services</h2>
+      <p>
+        AL WEJHA GROUP specializes in high-quality residential construction throughout Oman, offering custom solutions for villas, apartments, and sustainable housing projects. Our team combines local expertise with international standards to create homes that stand the test of time.
+      </p>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>Luxury Villa Construction</h3>
+          <p>Custom-designed villas that blend traditional Omani architecture with modern amenities. We handle everything from foundation to finishing touches.</p>
+        </div>
+        <div class="service-card">
+          <h3>Apartment Complexes</h3>
+          <p>High-quality apartment buildings with premium finishes, smart home technology, and community-focused designs.</p>
+        </div>
+        <div class="service-card">
+          <h3>Sustainable Housing</h3>
+          <p>Energy-efficient residential solutions incorporating solar power, water conservation systems, and eco-friendly materials.</p>
+        </div>
+        <div class="service-card">
+          <h3>Interior Fit-Outs</h3>
+          <p>Complete interior design and execution services to transform your space into a comfortable, stylish home.</p>
+        </div>
+        <div class="service-card">
+          <h3>Renovation Services</h3>
+          <p>Professional home remodeling and extension services to upgrade and modernize existing properties.</p>
+        </div>
+        <div class="service-card">
+          <h3>Project Management</h3>
+          <p>End-to-end oversight of residential projects ensuring quality, timeline adherence, and budget control.</p>
+        </div>
+      </div>
+
+      <h3>Why Choose AL WEJHA GROUP for Your Home Construction?</h3>
+      <ul>
+        <li>25+ years of construction experience in Oman</li>
+        <li>Skilled workforce with attention to detail</li>
+        <li>Quality materials from trusted suppliers</li>
+        <li>Transparent pricing and project management</li>
+        <li>Timely completion with minimal disruption</li>
+        <li>Compliance with all Omani building regulations</li>
+      </ul>
+    </section>
+
+    <section class="testimonials">
+      <h2>What Our Clients Say</h2>
+      <div class="testimonial-grid">
+        <div class="testimonial">
+          <p>"AL WEJHA GROUP built our dream villa in Muscat. Their team was professional, communicative, and delivered exceptional quality. We couldn't be happier with the result."</p>
+          <p><strong>- Ahmed Al-Rashidi, Muscat</strong></p>
+        </div>
+        <div class="testimonial">
+          <p>"The apartment complex they constructed for our development has set new standards in the area. Their attention to detail is remarkable."</p>
+          <p><strong>- Salimah Properties, Sohar</strong></p>
+        </div>
+        <div class="testimonial">
+          <p>"From design to completion, the process was smooth. They completed our sustainable home project on time and within budget."</p>
+          <p><strong>- The Al-Harthy Family, Salalah</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <h2>Ready to Build Your Dream Home?</h2>
+      <p>Contact AL WEJHA GROUP today for a free consultation about your residential construction project in Oman.</p>
+      <div class="contact-links">
+        <a class="cta" href="https://wa.me/96879271055" target="_blank">Chat on WhatsApp</a>
+        <a class="cta" href="tel:+96879271055">Call Us</a>
+        <a class="cta" href="mailto:business@alwejhagroup.com">Email Us</a>
+      </div>
+    </section>
+
+    <section>
+      <h3>Learn More About AL WEJHA GROUP</h3>
+      <p>
+        Discover our full range of construction and contracting services by visiting our main website:
+        <a class="backlink" href="https://www.alwejhagroup.com/" target="_blank">Visit AL WEJHA GROUP</a>
+      </p>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 AL WEJHA GROUP | 
+      <a href="https://www.alwejhagroup.com/sitemap.xml">Sitemap</a> | 
+      <a href="https://www.alwejhagroup.com/privacy-policy">Privacy Policy</a> | 
+      <a href="https://www.alwejhagroup.com/terms-of-service">Terms of Service</a>
+    </p>
+    <p>Residential Construction Division - Serving All of Oman</p>
+  </footer>
+</body>
+</html>
